@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percerntage calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">
+            Calculate Your Result
+        </h1>
+
+    </header>
+
+    <div class="container">
+        <section class="form_container">
+            <form id="form">
+                <div class="enterName">
+                    <label for="text"> Name</label><br>
+                    <input type="text" placeholder="Enter your name" class="name">
+                    <h2 class="nameErr err"></h2>
+                </div>
+
+
+                <h2>Enter obtained marks below</h2>
+                <div class="container">
+                    <div class="marks_div ">
+                        <label for="text">Phy.</label><br>
+                        <input type="number" placeholder="marks obtained in phy. " class="phy">
+                    </div>
+                    <div class="marks_div">
+                        <label for="text">Chem.</label><br>
+                        <input type="number" placeholder="marks obtained in Chem. " class="chem">
+                    </div>
+                    <div class="marks_div ">
+                        <label for="text">Math.</label><br>
+                        <input type="number" placeholder="marks obtained in Math. " class="math">
+                    </div>
+                </div>
+                <h2 class="marksErr err"></h2>
+                <div class="btn">
+                    <input type="button" class="check" value="Check">
+                </div>
+
+            </form>
+        </section>
+        <aside class="details_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.no.</th>
+                        <th>Name</th>
+                        <th>Physics</th>
+                        <th>Maths</th>
+                        <th>Chemistry</th>
+                        <th>%</th>
+                        <th>status</th>
+                        <th><button id="delAll">Delete All</button></th>
+                    </tr>
+                </thead>
+
+                <tbody class="addHtml">
+
+
+                </tbody>
+            </table>
+
+        </aside>
+    </div>
+
+    <footer class="main_footer">
+        &copy 2017 All Rights Reserved.
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
